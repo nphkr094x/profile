@@ -56,13 +56,13 @@ function Projects() {
     return (
         
         <section className="Content">
-            <video autoPlay muted loop className="bg-video">
-                <source src="/background.mp4" type="video/mp4"/>
-                your browser doesnt support the video tag
+            <video autoPlay muted loop playsInline className="bg-video">
+                <source src="background.mp4" type="video/mp4"/>
+                Your browser does not support the video tag
             </video>
 
             <div className="profile-pc">
-                <img src="/rudues.jpg" alt="" />
+                <img src="rudues.jpg" alt="" />
             </div>
             <h1 className="color-change">nphkr094x_</h1>
             
@@ -79,7 +79,7 @@ function Projects() {
             </p>
 
             <div className="social-icons">
-                <a href="https://www.instagram.com/nphkr094x/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/nphkr_x09?igsh=MWJwdWx2MjNhbzI3eA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </a>
                 <a href="https://github.com/nphkr094x" target="_blank" rel="noopener noreferrer">

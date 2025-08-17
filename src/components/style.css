@@ -1,3 +1,4 @@
+/* Reset & font */
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body {
     height: 100vh;
 }
 
+/* Video Background */
 .bg-video {
     position: fixed;
     top: 0;
@@ -24,26 +26,25 @@ body {
     z-index: -1;
 }
 
+/* Content Box */
 .Content {
     position: relative;
-    /* z-index: -1; */
     color: white;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 
-    
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     width: 900px;
     height: 500px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5)
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); */
+    padding: 20px;
 }
 
+/* Profile Image */
 .profile-pc img {
   border-radius: 50%;
   width: 150px; 
@@ -52,15 +53,18 @@ body {
   margin-bottom: 20px;
 }
 
+/* Heading */
 .Content h1 {
   font-size: 40px;
   padding: 5px;
 }
 
+/* Paragraphs */
 .Content p {
     padding: 5px;
 }
 
+/* Color animation */
 .color-change {
   animation: colorCycle 6s infinite linear;
   font-weight: bold;
@@ -74,8 +78,7 @@ body {
   100% { color: orange; }
 }
 
-
-
+/* Glow effect */
 .glow {
     color: white;
     text-shadow: 
@@ -91,7 +94,7 @@ body {
     to   { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 50px #fff; }
 }
 
-
+/* Social Icons */
 .social-icons {
     display: flex;
     gap: 20px;
@@ -107,4 +110,90 @@ body {
 .social-icons a:hover {
     transform: scale(1.2);
     color: rgb(202, 202, 202);
+}
+
+/* -------------------------
+   Media Queries for Mobile
+-------------------------- */
+@media (max-width: 1024px) {
+    .Content {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .profile-pc img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+
+    .Content h1 {
+        font-size: 32px;
+    }
+
+    .Content p {
+        font-size: 14px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Content {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .profile-pc img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .Content h1 {
+        font-size: 24px;
+    }
+
+    .Content p {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Content {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        padding: 8px;
+    }
+
+    .profile-pc img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 8px;
+    }
+
+    .Content h1 {
+        font-size: 20px;
+    }
+
+    .Content p {
+        font-size: 11px;
+    }
+
+    .social-icons {
+        gap: 12px;
+    }
+
+    .social-icons a {
+        font-size: 14px;
+    }
 }
